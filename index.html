@@ -14,15 +14,15 @@
         <nav>
           <img src="imgs/image-removebg-preview (1).png" class="logo" />
           <!-- <img src="imgs/logo.png" class="logo" /> -->
-          <ul>
+          <ul id="sidemenu">
             <li><a href="#header">HOME</a></li>
             <li><a href="#about">ABOUT</a></li>
             <!-- <li><a href="#services">SKILLS</a></li> -->
             <li><a href="#portfolio">PORTFOLIO</a></li>
             <li><a href="#contact">CONTACT</a></li>
-            <i class="fas fa-xmark"></i>
+            <i class="fas fa-times" onclick="closemenu()"></i>
           </ul>
-          <i class="fas fa-bars"></i>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
           <p>SQA Engineer / Web Developer</p>
@@ -182,7 +182,7 @@
     <!-- -------- Portfolio -------- -->
     <div id="portfolio">
         <div class="container">
-            <h1 class="sub-title">MY PORTFOLIO</h1>
+            <h1 class="sub-title">PORTFOLIO</h1>
             <div class="work-list">
                 <div class="work">
                     <img src="imgs/mywork-1.png">
@@ -293,6 +293,19 @@
           })
           .catch(error => console.error('Error!', error.message))
       })
+    </script>
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+
     </script>
   </body>
 </html>
