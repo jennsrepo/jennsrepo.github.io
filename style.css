@@ -377,7 +377,7 @@ nav .fas {
 @media only screen and (max-width: 600px) {
   #header {
     background-size: 80% 60%;
-    background-position: right 30% bottom 80%;
+    background-position: right 30% bottom 60%;
   }
 
   #header div nav img {
